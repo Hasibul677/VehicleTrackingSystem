@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#008100</color>
+    <color name="highEmphasis">#DE000000</color>
+    <color name="mediumEmphasis">#99000000</color>
+    <color name="disabled">#61000000</color>
+    <color name="error">#B00020</color>
+    <color name="divider">#E2E2E2</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primarySelected">#1F01579B</color>
+    <color name="background">#F8FAFB</color>
+</resources>

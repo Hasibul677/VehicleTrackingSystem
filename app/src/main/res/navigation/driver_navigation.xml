@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/driver_navigation"
+    app:startDestination="@id/nav_driver_home">
+
+    <fragment
+        android:id="@+id/nav_driver_home"
+        android:name="edu.iubat.vts.fragment.driver.DriverHomeFragment"
+        android:label="@string/title_driver_panel"
+        tools:layout="@layout/fragment_driver_home" />
+    <fragment
+        android:id="@+id/nav_driver_profile"
+        android:name="edu.iubat.vts.fragment.common.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

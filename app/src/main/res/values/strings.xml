@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Vehicle Tracking System</string>
+
+    <string name="title_sign_in">Sign in</string>
+    <string name="title_admin_panel">Admin Panel</string>
+    <string name="title_driver_panel">Driver Panel</string>
+    <string name="title_student_panel">Student Panel</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_add_driver">Add Driver Account</string>
+    <string name="title_add_student">Add Student Account</string>
+    <string name="title_add_bus">Add Bus Information</string>
+    <string name="title_edit_bus">Edit Bus</string>
+    <string name="title_edit_driver">Edit Driver</string>
+    <string name="title_edit_student">Edit Student</string>
+
+    <string name="tab_bus">Bus</string>
+    <string name="tab_driver">Driver</string>
+    <string name="tab_student">Student</string>
+
+    <string name="action_profile">Profile</string>
+    <string name="action_add_driver">Add Driver</string>
+    <string name="action_add_student">Add Student</string>
+    <string name="action_add_ad_conductor">Add Conductor</string>
+    <string name="action_add_bus">Add Bus</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_sign_out">Sign Out</string>
+    <string name="action_update_profile_image">Update Profile Image</string>
+
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+    <string name="button_ok">OK</string>
+    <string name="button_accept">Accept</string>
+    <string name="button_deny">Deny</string>
+    <string name="button_sign_in">Sign in</string>
+    <string name="button_add_driver">Add driver</string>
+    <string name="button_add_student">Add student</string>
+    <string name="button_add_bus">Add bus</string>
+    <string name="button_update">Update</string>
+    <string name="button_add_conductor">Add Conductor</string>
+    <string name="button_start_tracking">Start tracking</string>
+    <string name="button_stop_tracking">Stop</string>
+    <string name="button_open_map">Map</string>
+
+    <string name="header_sign_in">Sign in to your account</string>
+    <string name="header_add_bus_driver">Select a driver</string>
+    <string name="header_add_bus_conductor">Add a conductor for bus number: %s</string>
+
+    <string name="text_tracking_now">Tracking this device as %s number bus</string>
+    <string name="text_tracking_stopped">Tracking stopped</string>
+    <string name="text_driver_name">Driver Name: %s</string>
+    <string name="text_conductor_name">Conductor Name: %s</string>
+
+    <string name="toast_location_required">Location permission is required.</string>
+    <string name="toast_enable_location">Please enable location services</string>
+    <string name="toast_not_assigned_to_a_bus">You are not assigned to a bus</string>
+    <string name="toast_stop_current_tracking">Please stop current tracker</string>
+
+    <string name="notification_content_text">Tap to cancel</string>
+    <string name="notification_content_title">Tracking this device</string>
+    <string name="notification_channel_name">Location tracker</string>
+    <string name="notification_channel_description">Track driver location to find out bus location</string>
+
+    <string name="text_field_label_email">Email</string>
+    <string name="text_field_label_password">Password</string>
+    <string name="text_field_label_confirm_password">Confirm</string>
+    <string name="text_field_label_first_name">First Name</string>
+    <string name="text_field_label_last_name">Last Name</string>
+    <string name="text_field_label_student_id">Student ID</string>
+    <string name="text_field_label_license_number">License Number</string>
+    <string name="text_field_label_bus_number">Bus Number</string>
+    <string name="text_field_label_conductor_name">Conductor Name</string>
+
+    <string name="error_first_name_empty">First name can not be empty</string>
+    <string name="error_last_name_empty">Last name can not be empty</string>
+    <string name="error_email_empty">Email can not be empty</string>
+    <string name="error_phone_empty">Phone can not be empty</string>
+    <string name="error_student_id_empty">Student ID can not be empty</string>
+    <string name="error_password_empty">Password can not be empty</string>
+    <string name="error_confirm_password_empty">Confirm password can not be empty</string>
+    <string name="error_bus_number_empty">Bus number can not be empty</string>
+    <string name="error_bus_license_number_empty">Bus license number can not be empty</string>
+    <string name="error_conductor_name_empty">Conductor name can not be empty</string>
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_invalid_phone">Invalid phone number</string>
+    <string name="error_something_went_wrong">Something went wrong</string>
+    <string name="error_password_did_not_match">Password did not match</string>
+    <string name="error_email_password_did_not_match">Email and password did not match</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

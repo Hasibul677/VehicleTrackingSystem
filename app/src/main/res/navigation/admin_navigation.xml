@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/nav_admin_home">
+    <fragment
+        android:id="@+id/nav_admin_home"
+        android:name="edu.iubat.vts.fragment.admin.home.AdminHomeFragment"
+        android:label="@string/title_admin_panel"
+        tools:layout="@layout/fragment_admin_home" >
+        <action
+            android:id="@+id/action_nav_admin_home_to_nav_add_bus_driver"
+            app:destination="@id/nav_add_bus_driver"
+            app:popUpTo="@id/nav_admin_home" />
+        <action
+            android:id="@+id/action_nav_admin_home_to_nav_add_bus_conductor"
+            app:destination="@id/nav_add_bus_conductor"
+            app:popUpTo="@id/nav_admin_home" />
+        <action
+            android:id="@+id/action_nav_admin_home_to_nav_bus_details_dialog"
+            app:destination="@id/nav_bus_details_dialog"
+            app:popUpTo="@id/nav_admin_home" />
+        <action
+            android:id="@+id/action_nav_admin_home_to_nav_edit_bus"
+            app:destination="@id/nav_edit_bus"
+            app:popUpTo="@id/nav_admin_home" />
+        <action
+            android:id="@+id/action_nav_admin_home_to_nav_edit_driver"
+            app:destination="@id/nav_edit_driver"
+            app:popUpTo="@id/nav_admin_home" />
+        <action
+            android:id="@+id/action_nav_admin_home_to_nav_edit_student"
+            app:destination="@id/nav_edit_student"
+            app:popUpTo="@id/nav_admin_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_admin_profile"
+        android:name="edu.iubat.vts.fragment.common.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_add_bus"
+        android:name="edu.iubat.vts.fragment.admin.add.AddBusFragment"
+        android:label="@string/title_add_bus"
+        tools:layout="@layout/fragment_add_bus" />
+    <fragment
+        android:id="@+id/nav_add_driver"
+        android:name="edu.iubat.vts.fragment.admin.add.AddDriverFragment"
+        android:label="@string/title_add_driver"
+        tools:layout="@layout/fragment_add_driver" />
+    <fragment
+        android:id="@+id/nav_add_student"
+        android:name="edu.iubat.vts.fragment.admin.add.AddStudentFragment"
+        android:label="@string/title_add_student"
+        tools:layout="@layout/fragment_add_student" />
+    <dialog
+        android:id="@+id/nav_add_bus_driver"
+        android:name="edu.iubat.vts.fragment.admin.list.dialog.AddBusDriverDialogFragment"
+        tools:layout="@layout/fragment_add_bus_driver_dialog" >
+        <argument
+            android:name="Bus"
+            app:argType="edu.iubat.vts.data.model.Bus" />
+    </dialog>
+    <dialog
+        android:id="@+id/nav_add_bus_conductor"
+        android:name="edu.iubat.vts.fragment.admin.list.dialog.AddBusConductorDialogFragment"
+        tools:layout="@layout/fragment_add_bus_conductor_dialog" >
+        <argument
+            android:name="Bus"
+            app:argType="edu.iubat.vts.data.model.Bus" />
+    </dialog>
+    <dialog
+        android:id="@+id/nav_bus_details_dialog"
+        android:name="edu.iubat.vts.fragment.admin.list.dialog.BusDetailsDialogFragment"
+        tools:layout="@layout/fragment_bus_details_dialog" >
+        <argument android:name="Bus"
+            app:argType="edu.iubat.vts.data.model.Bus" />
+    </dialog>
+    <fragment
+        android:id="@+id/nav_edit_bus"
+        android:name="edu.iubat.vts.fragment.admin.edit.EditBusFragment"
+        android:label="@string/title_edit_bus"
+        tools:layout="@layout/fragment_edit_bus" >
+        <argument
+            android:name="Bus"
+            app:argType="edu.iubat.vts.data.model.Bus" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_edit_driver"
+        android:name="edu.iubat.vts.fragment.admin.edit.EditDriverFragment"
+        android:label="@string/title_edit_driver"
+        tools:layout="@layout/fragment_edit_driver" >
+        <argument
+            android:name="User"
+            app:argType="edu.iubat.vts.data.model.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_edit_student"
+        android:name="edu.iubat.vts.fragment.admin.edit.EditStudentFragment"
+        android:label="@string/title_edit_student"
+        tools:layout="@layout/fragment_edit_student" >
+        <argument
+            android:name="User"
+            app:argType="edu.iubat.vts.data.model.User" />
+    </fragment>
+</navigation>

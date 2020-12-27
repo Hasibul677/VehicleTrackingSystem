@@ -1,0 +1,51 @@
+<resources>
+
+    <style name="Theme.VTS" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorSecondaryVariant">@color/primary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@android:color/darker_gray</item>
+        <item name="android:navigationBarColor">@color/highEmphasis</item>
+    </style>
+
+    <style name="Theme.VTS.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.VTS.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="colorPrimary">@color/white</item>
+        <item name="iconTint">@color/mediumEmphasis</item>
+    </style>
+
+    <style name="Theme.VTS.SplashTheme" parent="Theme.VTS.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="Theme.VTS.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="Theme.VTS.OverFlowButton">
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:backgroundTint">@color/transparent</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:tint">@color/mediumEmphasis</item>
+    </style>
+
+    <style name="Theme.VTS.IconOnlyButton" parent="Theme.VTS.OverFlowButton">
+        <item name="android:padding">0dp</item>
+        <item name="android:tint">@color/primary</item>
+    </style>
+
+    <style name="Theme.VTS.TextAppearance.BottomNavigationView.Active" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.VTS.TextAppearance.BottomNavigationView.Inactive" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

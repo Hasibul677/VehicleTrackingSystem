@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/student_navigation"
+    app:startDestination="@id/nav_student_home">
+
+    <fragment
+        android:id="@+id/nav_student_home"
+        android:name="edu.iubat.vts.fragment.student.StudentHomeFragment"
+        android:label="@string/title_student_panel"
+        tools:layout="@layout/fragment_student_home" >
+        <action
+            android:id="@+id/action_nav_student_home_to_nav_bus_info_dialog"
+            app:destination="@id/nav_bus_info_dialog"
+            app:popUpTo="@id/nav_student_home" />
+    </fragment>
+    <dialog
+        android:id="@+id/nav_bus_info_dialog"
+        android:name="edu.iubat.vts.fragment.student.dialog.BusInfoDialogFragment"
+        tools:layout="@layout/fragment_bus_info_dialog" >
+        <argument
+            android:name="Bus"
+            app:argType="edu.iubat.vts.data.model.Bus" />
+    </dialog>
+    <fragment
+        android:id="@+id/nav_student_profile"
+        android:name="edu.iubat.vts.fragment.common.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
